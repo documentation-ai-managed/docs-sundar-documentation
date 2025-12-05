@@ -1,0 +1,90 @@
+---
+title: Design Systems
+description: Building and maintaining scalable design systems in UXPin
+---
+
+## Design Systems Overview
+
+UXPin helps teams build and maintain comprehensive design systems that ensure consistency across products. Create reusable components, define design tokens, and establish guidelines for your entire organization.
+
+<Columns cols={3}>
+  <Card title="Design Tokens" icon="tag" href="#tokens">
+    Define colors, typography, and spacing standards.
+  </Card>
+  <Card title="Component Library" icon="grid" href="#library">
+    Build a centralized collection of reusable components.
+  </Card>
+  <Card title="Guidelines" icon="book-open" href="#guidelines">
+    Document usage patterns and best practices.
+  </Card>
+</Columns>
+
+## Creating Design Tokens
+
+<Steps>
+  <Step title="Define Standards" icon="settings">
+    Establish your brand colors, typography, and spacing rules.
+  </Step>
+  <Step title="Create Tokens" icon="plus">
+    Add design tokens to your UXPin workspace.
+  </Step>
+  <Step title="Apply Tokens" icon="paintbrush">
+    Use tokens consistently across all components.
+  </Step>
+  <Step title="Update System" icon="refresh-cw">
+    Maintain and evolve your design system over time.
+  </Step>
+</Steps>
+
+## Managing Components
+
+<Tabs>
+  <Tab title="Atomic Design" icon="atom">
+    Organize components by atomic design principles.
+  </Tab>
+  <Tab title="Categories" icon="folder">
+    Group components by function or feature.
+  </Tab>
+  <Tab title="Versioning" icon="git-branch">
+    Track changes and maintain backward compatibility.
+  </Tab>
+</Tabs>
+
+## Documentation
+
+<CodeGroup tabs="Component Docs,Usage Examples">
+  ```markdown
+# Button Component
+
+A clickable button for user interactions.
+
+## Props
+
+- `variant`: primary | secondary
+- `size`: small | medium | large
+- `disabled`: boolean
+```
+  ```javascript
+// Usage example
+<Button variant="primary" size="medium" onClick={handleClick}>
+  Click me
+</Button>
+```
+</CodeGroup>
+
+<Callout kind="tip">Regularly audit and update your design system to keep it current.</Callout>
+
+## Scaling Your System
+
+<Expandable title="Multi-Platform Support" default-open="false">
+  Adapt your design system for web, mobile, and other platforms.
+</Expandable>
+
+<ExpandableGroup>
+  <Expandable title="Team Adoption" default-open="false">
+    Strategies for getting your entire organization to adopt the design system.
+  </Expandable>
+  <Expandable title="Maintenance" default-open="false">
+    How to keep your design system healthy and up-to-date.
+  </Expandable>
+</ExpandableGroup>

@@ -1,0 +1,79 @@
+{
+  "name": "UXPin Documentation",
+  "initialRoute": "introduction",
+  "primaryColor": "#8c8c8c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "star"
+              }
+            ]
+          },
+          {
+            "group": "Core Features",
+            "icon": "lightbulb",
+            "pages": [
+              {
+                "title": "Authentication",
+                "path": "authentication",
+                "icon": "key"
+              },
+              {
+                "title": "Components",
+                "path": "components",
+                "icon": "code"
+              },
+              {
+                "title": "Prototypes",
+                "path": "prototypes",
+                "icon": "layout"
+              }
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "icon": "zap",
+            "pages": [
+              {
+                "title": "Design Systems",
+                "path": "design-systems",
+                "icon": "grid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "terminal",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

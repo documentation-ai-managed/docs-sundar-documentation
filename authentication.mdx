@@ -1,0 +1,82 @@
+---
+title: Authentication
+description: Learn how to authenticate and manage access in UXPin
+---
+
+## Authentication Overview
+
+UXPin supports multiple authentication methods to ensure secure access to your design projects. Choose the method that best fits your team's workflow and security requirements.
+
+<Tabs>
+  <Tab title="Email & Password" icon="mail">
+    Standard authentication using email and password credentials.
+  </Tab>
+  <Tab title="SSO Integration" icon="shield">
+    Single sign-on with popular identity providers like Google, Azure, and Okta.
+  </Tab>
+  <Tab title="Team Invites" icon="users">
+    Invite team members with role-based access control.
+  </Tab>
+</Tabs>
+
+## Setting Up Authentication
+
+<Steps>
+  <Step title="Choose Auth Method" icon="settings">
+    Select your preferred authentication approach from the account settings.
+  </Step>
+  <Step title="Configure Providers" icon="cog">
+    Set up SSO providers or invite team members with appropriate permissions.
+  </Step>
+  <Step title="Test Access" icon="check-circle">
+    Verify that all team members can access the workspace correctly.
+  </Step>
+</Steps>
+
+## API Authentication
+
+For API integrations, UXPin uses API keys and OAuth tokens:
+
+<CodeGroup tabs="API Key,OAuth">
+  ```javascript
+const apiKey = 'uxp_your_api_key_here';
+const response = await fetch('/api/projects', {
+  headers: {
+    'Authorization': `Bearer ${apiKey}`,
+    'Content-Type': 'application/json'
+  }
+});
+```
+  ```javascript
+const clientId = 'your_client_id';
+const redirectUri = 'https://yourapp.com/callback';
+// OAuth flow implementation
+```
+</CodeGroup>
+
+<Callout kind="alert">Always store API keys securely and never commit them to version control.</Callout>
+
+## Managing Permissions
+
+UXPin offers granular role-based access control:
+
+| Role | Permissions | Use Case |
+|------|-------------|----------|
+| Viewer | Read-only access | Stakeholders reviewing designs |
+| Editor | Create and edit designs | Designers working on projects |
+| Admin | Full workspace control | Team leads managing settings |
+
+## Troubleshooting Auth Issues
+
+<Expandable title="Common Problems" default-open="false">
+  If you're experiencing authentication issues, check your network settings, clear browser cache, or contact support for assistance with SSO configuration.
+</Expandable>
+
+<ExpandableGroup>
+  <Expandable title="SSO Setup Guide" default-open="false">
+    Step-by-step instructions for configuring single sign-on with your identity provider.
+  </Expandable>
+  <Expandable title="Password Reset" default-open="false">
+    How to reset your password if you've forgotten it or need to update credentials.
+  </Expandable>
+</ExpandableGroup>

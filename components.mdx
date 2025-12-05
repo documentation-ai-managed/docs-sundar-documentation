@@ -1,0 +1,84 @@
+---
+title: Components
+description: Working with reusable components and design systems in UXPin
+---
+
+## Component Library Overview
+
+UXPin's component library allows you to build and maintain reusable design elements that behave exactly like production code. Import existing components or create new ones with our visual editor.
+
+<Columns cols={3}>
+  <Card title="Import Components" icon="download" href="#importing">
+    Bring in components from your existing design system.
+  </Card>
+  <Card title="Create New" icon="plus" href="#creating">
+    Build custom components with our visual tools.
+  </Card>
+  <Card title="Manage Library" icon="folder" href="#managing">
+    Organize and version your component collections.
+  </Card>
+</Columns>
+
+## Importing Components
+
+<Steps>
+  <Step title="Prepare Components" icon="file-text">
+    Ensure your components are properly structured and documented.
+  </Step>
+  <Step title="Upload to UXPin" icon="upload">
+    Use our import tools to add components to your library.
+  </Step>
+  <Step title="Configure Properties" icon="settings">
+    Set up component properties and interactions.
+  </Step>
+  <Step title="Test Functionality" icon="check-circle">
+    Verify that imported components work as expected.
+  </Step>
+</Steps>
+
+## Creating Custom Components
+
+<Tabs>
+  <Tab title="Visual Editor" icon="edit">
+    Build components using our drag-and-drop interface.
+  </Tab>
+  <Tab title="Code Mode" icon="code">
+    Write components directly in code for advanced functionality.
+  </Tab>
+  <Tab title="Templates" icon="copy">
+    Start with pre-built templates and customize as needed.
+  </Tab>
+</Tabs>
+
+## Component Properties
+
+Components in UXPin support various property types:
+
+<ParamField path="variant" param-type="string" required="false">
+  Component variant (e.g., primary, secondary).
+</ParamField>
+
+<ParamField query="disabled" param-type="boolean" required="false">
+  Whether the component is disabled.
+</ParamField>
+
+<ParamField body="onClick" param-type="function" required="false">
+  Click handler function for interactive components.
+</ParamField>
+
+## Best Practices
+
+<Callout kind="info">Keep components modular and well-documented for better team collaboration.</Callout>
+
+<Expandable title="Versioning Components" default-open="false">
+  Use UXPin's versioning system to track changes and maintain backward compatibility.
+</Expandable>
+
+<ExpandableGroup>
+  <Expandable title="Component Documentation" default-open="false">
+    Best practices for documenting component usage and properties.
+  </Expandable>
+  <Expandable title="Performance Tips" default-open="false">
+    Optimize component loading and rendering performance.
+  </Expandable>
+</ExpandableGroup>
